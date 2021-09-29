@@ -6,7 +6,7 @@ services:
     restart: always
     volumes:
       # Mount for influxdb data directory and configuration
-      - ~/influxdbData/:/var/lib/influxdb2:rw
+      - ../influxdbData/:/var/lib/influxdb2:rw
     ports:
       - target: 8086
         published: 8086
@@ -57,5 +57,6 @@ services:
 #      - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=mytoken
 #    depends_on:
 #      - influxdb_cli
-volumes:
-  influxdbv2:
+#volumes:
+#  influxdbv2:
+#    name: influxdbv2
