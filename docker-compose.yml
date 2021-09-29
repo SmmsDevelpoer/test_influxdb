@@ -18,7 +18,8 @@ services:
       - DOCKER_INFLUXDB_INIT_USERNAME=smms
       - DOCKER_INFLUXDB_INIT_PASSWORD=password
       - DOCKER_INFLUXDB_INIT_ORG=SMMS
-      - DOCKER_INFLUXDB_INIT_BUCKET=smmsbucket
+      - DOCKER_INFLUXDB_INIT_BUCKET=SecondBucket
+      - DOCKER_INFLUXDB_INIT_RETENTION=14d
 #  telegraf:
 #    image: telegraf
 #    links:
